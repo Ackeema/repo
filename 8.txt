@@ -1,0 +1,12 @@
+def No_Fib_Checker (lst):
+if len(lst) == 0:
+return True
+else:
+for i in range(len(lst)-1):
+if i == 0 and lst[i] != 1 and lst[i] != 0:
+return True
+elif i == 1 and lst[i] != 1:
+return True
+elif i > 1 and (lst[len(lst)-2]+lst[len(lst)-3]!=lst[len(lst)-1]):
+return True
+return False
